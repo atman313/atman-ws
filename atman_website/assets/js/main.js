@@ -20,11 +20,11 @@
 			mobile:    [ null,      '736px'  ]
 		});
 
-	// Play initial animations on page load.
+	// // Play initial animations on page load.
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
-			}, 100);
+			});
 		});
 
 	// Scrolly.
@@ -34,21 +34,21 @@
 		});
 
 	// Dropdowns.
-		$('#nav > ul').dropotron({
-			mode: 'fade',
-			noOpenerFade: true,
-			expandMode: (browser.mobile ? 'click' : 'hover')
-		});
+	// 	$('#nav > ul').dropotron({
+	// 		mode: 'fade',
+	// 		noOpenerFade: true,
+	// 		expandMode: (browser.mobile ? 'click' : 'hover')
+	// 	});
 
-	// Nav Panel.
+	// // Nav Panel.
 
 		// Button.
-			$(
-				'<div id="navButton">' +
-					'<a href="#navPanel" class="toggle"></a>' +
-				'</div>'
-			)
-				.appendTo($body);
+		// 	$(
+		// 		'<div id="navButton">' +
+		// 			'<a href="#navPanel" class="toggle"></a>' +
+		// 		'</div>'
+		// 	)
+		// 		.appendTo($body);
 
 		// Panel.
 			$(
